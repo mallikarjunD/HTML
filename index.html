@@ -1,0 +1,50 @@
+<form method="post" name="form" action="http://luckychartapi.saralvaastu.com/lucky_chart_request/save_request" target="_blank" class="pure-form" onsubmit="return checkemail()">
+            <div class="box-body">
+              <div class="row">
+                <div class="col-md-6">
+					<div class="form-group">
+						<label>Name*</label>
+						<input type="text" class="form-control" name="name" required="">
+					</div>
+					<div class="form-group">
+						<label>Phone Number</label>
+						<input type="text" class="form-control" name="number">
+					</div>
+					<div class="form-group">
+						<label>E-mail</label>
+						<input type="email" class="form-control" id="email" name="e_mail">
+					</div>
+			
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Date of birth*</label>
+						<div class="input-group">
+							<div class="input-group-addon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<input type="text" class="form-control" name="dob" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="" required="">
+						</div>
+					</div> 
+					<div class="form-group">
+						<label>Gender*</label>
+						<select class="form-control select2 select2-hidden-accessible" name="gender" required="" tabindex="-1" aria-hidden="true">
+							<option value="">Select Gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 528px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-gender-z4-container"><span class="select2-selection__rendered" id="select2-gender-z4-container" title="Select Gender">Select Gender</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+					</div>
+				
+                </div><!-- /.col -->
+				<!-- <input type="hidden" name="lc_count" value="0"> -->
+				<input type="hidden" name="vastuchart" value="vastuchart">
+								<div class="col-md-12">
+				<div class="col-md-5">
+				</div>
+				<div class="col-md-2"><!-- /.col -->
+					<input type="submit" class="btn btn-block btn-primary btn-flat" name="submit" value="Generate">
+				</div>
+				
+				</div>
+              </div><!-- /.row -->
+            </div></form>
